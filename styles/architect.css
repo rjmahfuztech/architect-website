@@ -132,11 +132,14 @@ nav > ul li a {
   margin: 5px;
 }
 /* Fact Section  */
+.fact {
+  padding: 20px;
+}
 .fact-card {
   display: flex;
-  justify-content: space-around;
-  margin-top: 80px;
-  gap: 10px;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 20px;
 }
 .fact-card-info {
   border: 1px solid #ff900e;
@@ -144,6 +147,7 @@ nav > ul li a {
   text-align: center;
   padding: 25px 20px;
   width: 240px;
+  margin: 0 auto;
 }
 
 /* Responsive Style Using Media Query */
@@ -179,6 +183,17 @@ nav > ul li a {
   .experience > h2 {
     font-size: 2rem;
   }
+  .fact {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .fact > .section-title {
+    margin-top: 0;
+  }
+  .fact-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav,
@@ -203,5 +218,19 @@ nav > ul li a {
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0%);
+  }
+  .fact {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .fact > .section-title {
+    margin-top: 0;
+  }
+  .fact-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fact-card-info {
+    width: 300px;
   }
 }
