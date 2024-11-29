@@ -131,6 +131,20 @@ nav > ul li a {
   font-size: 20px;
   margin: 5px;
 }
+/* Fact Section  */
+.fact-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  gap: 10px;
+}
+.fact-card-info {
+  border: 1px solid #ff900e;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px 20px;
+  width: 240px;
+}
 
 /* Responsive Style Using Media Query */
 @media screen and (max-width: 576px) {
