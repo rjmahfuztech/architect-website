@@ -149,7 +149,22 @@ nav > ul li a {
   width: 240px;
   margin: 0 auto;
 }
-
+/* Sponsors Section  */
+.sponsor {
+  padding: 0 20px;
+  text-align: center;
+}
+.sponsor-content {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sponsors-company {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+}
 /* Responsive Style Using Media Query */
 @media screen and (max-width: 576px) {
   nav,
@@ -190,7 +205,8 @@ nav > ul li a {
   .fact > .section-title {
     margin-top: 0;
   }
-  .fact-card {
+  .fact-card,
+  .sponsors-company {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -232,5 +248,12 @@ nav > ul li a {
   }
   .fact-card-info {
     width: 300px;
+  }
+  .sponsors-company {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #figma-logo {
+    grid-column: span 2;
   }
 }
